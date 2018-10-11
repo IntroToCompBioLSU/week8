@@ -1,5 +1,5 @@
 #! /usr/bin/python
-#will reverse anything 
+
 mystring = input("Enter Your DNA Sequence: ")
 #converts to lowercase
 mystring = mystring.lower()
@@ -8,5 +8,6 @@ mystring = mystring.replace("c", "G")
 mystring = mystring.replace("g", "C")
 mystring = mystring.replace("a", "T")
 mystring = mystring.replace("t", "A")
-#print everse order
+#print reverse order
+print("Your reverse complimentary DNA Sequence is: ")
 print(mystring[::-1])
