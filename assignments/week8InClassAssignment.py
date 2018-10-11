@@ -17,4 +17,3 @@ for nuc in dnaSeq:
         	print("C")
 	else:
         	print("This is not a valid nucleotide!")
-dnaSeq = ' '.join(dnaSeq)
