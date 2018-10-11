@@ -6,7 +6,6 @@ dnaSeq = input ("Input DNA sequence in all capital letters: ")
 
 #reverses DNA sequence that user inputs
 dnaSeq = dnaSeq[::-1]
-print (dnaSeq)
 
 #create compliment of dna Sequence
 for i in dnaSeq:
@@ -19,6 +18,8 @@ for i in dnaSeq:
 	elif i == "G":
                 complement.append("C")
 
+
 #converts list to a string
-str2 = ''.join(complement)
-print (str2)
+str = ''.join(complement)
+print("reverse complement: ") 
+print(str)
