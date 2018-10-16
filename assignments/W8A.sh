@@ -52,4 +52,5 @@ if command == "1":
 if command == "2":
 	import random
 	rDNAcodon = random.choice(DNAcodon)
+	print ("A random codon from your DNA sequence:")
 	print (rDNAcodon)
