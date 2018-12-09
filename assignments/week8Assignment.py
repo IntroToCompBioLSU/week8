@@ -11,7 +11,7 @@ if option == "1":
 	dnaSeq = input("Enter protein-coding nucleotide sequence here (IN ALL CAPS): ")
 
 # Option 1: Transcription of nucleotide sequence
-	rnaSeq = dnaSeq.replace("T","U")
+	rnaSeq = dnaSeq.upper().replace("T","U") # DB: Could use .upper() here.
 	print("Resulting transcription sequence: ")
 	print(rnaSeq)
 
@@ -35,10 +35,11 @@ if option == "1":
 		}
 
 # Option 1: Translation of transcription sequence
-	rnaSeq = dnaSeq.replace("T","U")
-	dnaSeq = input("Enter transcription sequence here for translation: ")
+	# rnaSeq = dnaSeq.replace("T","U")
+	# dnaSeq = input("Enter transcription sequence here for translation: ")
+	# DB: Why ask for input again? 
 	proteinSeq = ""
-	AminoDic ={}
+	# AminoDic ={}  # DB: This seems to erase your amino acid dictionary. 
 	for i in range(0, len(rnaSeq), 3):
 		if rnaSeq[i:i+3] in AminoDic:
 			proteinSeq += AminoDic[rnaSeq[i:i+3]]
@@ -56,3 +57,4 @@ elif option == "2":
 	ranCodon = random.choice(codon)
 	print(ranCodon)
 
+# DB: Overall, very good! Just see a few comments above.
