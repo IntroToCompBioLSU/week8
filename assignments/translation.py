@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+# DB: I adjusted shebang line again.
 
 #Amino Acid Translation Dictionary
 aminoAcids = {"AAA":"Lysine ", "AAC":"Asparagine ", "AAG":"Lysine ", "AAU":"Asparagine ", 
@@ -37,3 +38,6 @@ elif option == "2":
 	import random
 	codon = random.choice(code)
 	print(codon)
+	
+# DB: Very good! Again, I'd suggest more spacing and a bit more commenting to keep things
+#     organized and clear.
