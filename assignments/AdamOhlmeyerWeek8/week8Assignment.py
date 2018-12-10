@@ -4,7 +4,7 @@
 # 1 Translate a protein-coding nucleotide sequence to amino acids
 # 2 Randomly draw a codon from the sequence
 
-print (30 * "-" , "MENU" , 30 * "-")
+print (30 * "-" , "MENU" , 30 * "-")	# DB: I like the formatting ideas.
 print ("Select an option below by entering the number")
 selection = input ("(1) translate a protein-coding nucleotide sequence to amino acids -or- (2) randomly draw a codon from sequence: ")
 print (67 * "-")
@@ -60,3 +60,6 @@ elif selection == "2":
 	import random
 	randomCodon = random.choice(codon)
 	print(randomCodon)
+
+# DB: Excellent. Code is very well laid out, clean, and runs well. Only suggestion is to add
+#     a few more comments on lines whose function is not obvious (often if statements and for loops).
