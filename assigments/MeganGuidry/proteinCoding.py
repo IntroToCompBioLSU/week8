@@ -56,3 +56,7 @@ else:
     import random
     randomCodon= random.choice(codon)
     print(randomCodon)
+
+# DB: Overall, really good! Code works well, is clean, and well commented. Only minor things:
+#     - Could use .upper() when reading in sequence
+#     - Could add a few more specific comments to some if statements and for loops
